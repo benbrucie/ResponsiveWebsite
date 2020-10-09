@@ -9,7 +9,8 @@ $(document).ready(function (){
     html += '<img src="nyc.jpg"></img>';
     html += '<div class="description">One of those busy cities</div>';
     html += '<div class="price">500</div>';
-    html += '<button>Add to cart</button>';
+    html += '<button class="item-add">Add to cart</button>';
+    html += '<button class="item-remove">Remove</button>';
     html += '<br>';
     html += '<a href="#">More info</a>';
     html += '<div class="more-info">Still one of those busy cities</div>';
@@ -17,4 +18,9 @@ $(document).ready(function (){
 
     $('#container').prepend(html);
   });
+
+    $('#container').on('click', '.item-remove', function(){
+      $(this).parent().remove();
+    });
+
 });
