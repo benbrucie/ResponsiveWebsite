@@ -12,7 +12,7 @@ $(document).ready(function (){
     html += '<button class="item-add">Add to cart</button>';
     html += '<button class="item-remove">Remove</button>';
     html += '<br>';
-    html += '<a href="#">More info</a>';
+    html += '<a  class="more-info-link" href="#">More info</a>';
     html += '<div class="more-info">Still one of those busy cities</div>';
     html += '</div>';
 
@@ -21,15 +21,16 @@ $(document).ready(function (){
 
   $('#container').on('click','.more-info-link',function(event){
     event.preventDefault();
-    
 
-    $(this).parent().find('.more-info').toggle();
+
+    $(this).parent().find('.more-info').slideToggle(1000);
 
   });
-
 
     $('#container').on('click', '.item-remove', function(){
       $(this).parent().remove();
     });
+
+    $.ajax('item.json', function(response){});
 
 });
