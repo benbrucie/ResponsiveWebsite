@@ -1,3 +1,6 @@
+//Reference: https://en.wikipedia.org/wiki/Times_Square
+//https://www.udemy.com/course/complete-jquery-and-ajax-programming-curriculum/
+
 var cart = 0;
 
 function addItem (id, name, description, price, moreInfo){
