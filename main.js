@@ -86,4 +86,13 @@ $(document).ready(function (){
       });
       });
 
+      $('#newsletter-checkbox').on('change', function(){
+        if ($(this).is(':checked')){
+          $('#newsletter-frequency').show();
+        } else {
+          $('#newsletter-frequency').hide();
+        }
+      });
+      $('#newsletter-checkbox').trigger('change');
+
 });

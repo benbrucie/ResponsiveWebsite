@@ -16,6 +16,10 @@ body{
 
 }
 
+#newsletter-frequency{
+  display: none;
+}
+
 .item{
   width: 200px;
   background-color: #ddd;
