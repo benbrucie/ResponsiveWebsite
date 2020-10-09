@@ -1,15 +1,18 @@
 {
   "items":[{
+    "id": 1000,
   "name": "New York",
   "description": "One of those busy cities",
   "price": "500",
   "moreInfo": "Still one of those busy cities"
 },{
+  "id": 1001,
 "name": "Georgia",
 "description": "One of those busy cities",
 "price": "500",
 "moreInfo": "Still one of those busy cities"
 },{
+  "id": 1002,
 "name": "WDC",
 "description": "One of those busy cities",
 "price": "500",
